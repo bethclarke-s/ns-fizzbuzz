@@ -12,6 +12,14 @@ function fizzbuzz() {
             string += "Buzz";
         }
 
+        if (i % 7 === 0) {
+            string += "Bang";
+        }
+
+        if (i % 11 === 0) {
+            string = "Bong"; // Only prints Bong in this case
+        }
+
         if (string === "") {
             string += i.toString();
         }
